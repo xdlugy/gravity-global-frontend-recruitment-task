@@ -1,7 +1,75 @@
 $background: #FFFFFF;
 $primary: #E4C1AE;
 $text: #121212;
+$font: "Roboto";
 
 body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
     background-color: $background;
+    max-width: 1440px;
+    font-family: $font;
+    color: $text;
+    margin: auto;
+}
+
+section main {
+    position: relative;
+    max-width: 980px;
+    height: 330px;
+    margin: auto;
+    margin-top: 95px;
+}
+
+section img {
+    position: relative;
+    width: 505px;
+    height: 330px;
+    float: left;
+}
+
+div {
+    position: relative;
+    width: 380px;
+    height: 330px;
+    float: left;
+    margin-left: 95px;
+}
+
+div p#title {
+    width: 380px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+}
+
+div p#text {
+    width: 380px;
+    height: 96px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+div button {
+    padding: 16px 40px;
+    gap: 10px;
+
+    width: 128px;
+    height: 48px;
+
+    background: $primary;
+    border-radius: 32px;
+    border-width: 0;
+
+    text-align: center;
+}
+
+div button:hover {
+    cursor: pointer;
 }
