@@ -1,31 +1,25 @@
 {
-  "name": "gravity-global-recruitment-task",
+  "name": "gravity-global-frontend-recruitment-task",
   "version": "1.0.0",
   "description": "Zadanie jest przeznaczone na każdy poziom umiejętności developera, dzieli się na poszczególne zadania,\r które są stopniowo coraz trudniejsze. Każdy powinien zrobić test na tyle ile aktualnie potrafi, gdyż\r poszukujemy bardzo często osób z różnym poziomem wiedzy.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kacper Kaleta",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^9.6.0",
-    "cssnano": "^4.1.10",
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xdlugy/gravity-global-frontend-recruitment-task.git"
   },
+  "author": "Kacper Kaleta",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/xdlugy/gravity-global-frontend-recruitment-task/issues"
   },
-  "homepage": "https://github.com/xdlugy/gravity-global-frontend-recruitment-task#readme"
+  "homepage": "https://github.com/xdlugy/gravity-global-frontend-recruitment-task#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.8"
+  }
 }
