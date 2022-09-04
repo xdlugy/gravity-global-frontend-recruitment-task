@@ -12,54 +12,77 @@ section {
   margin: auto;
 }
 
-section main {
+main {
   position: relative;
   max-width: 980px;
   height: 330px;
   margin: auto;
   margin-top: 95px;
 }
+@media screen and (max-width: 980px) {
+  main {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
 
-section img {
+img {
   position: relative;
-  width: 505px;
+  max-width: 50%;
   height: 330px;
   float: left;
+}
+@media screen and (max-width: 980px) {
+  img {
+    max-width: 980px;
+    width: 980px;
+    height: auto;
+    float: none;
+    margin: auto;
+    padding: 50px;
+  }
 }
 
 div {
   position: relative;
-  width: 380px;
+  max-width: 40%;
   height: 330px;
   float: left;
-  margin-left: 95px;
+  margin-left: 10%;
+}
+@media screen and (max-width: 980px) {
+  div {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    padding: 50px;
+  }
 }
 
 div p#title {
-  width: 380px;
-  height: 50px;
   font-weight: 700;
   font-size: 42px;
-  line-height: 120%;
 }
 
 div p#text {
-  width: 380px;
-  height: 96px;
   font-weight: 300;
   font-size: 16px;
-  line-height: 150%;
 }
 
 div button {
   padding: 16px 40px;
-  gap: 10px;
   width: 128px;
   height: 48px;
   background: #E4C1AE;
   border-radius: 32px;
   border-width: 0;
-  text-align: center;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: white;
+  line-height: 0px;
 }
 
 div button:hover {
