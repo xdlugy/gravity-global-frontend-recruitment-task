@@ -11,6 +11,12 @@ section {
   color: #121212;
   margin: auto;
 }
+@media screen and (max-width: 980px) {
+  section {
+    max-width: 980px;
+    width: 980px;
+  }
+}
 
 main {
   position: relative;
@@ -21,8 +27,8 @@ main {
 }
 @media screen and (max-width: 980px) {
   main {
-    max-width: 100%;
-    width: 100%;
+    max-width: 980px;
+    width: 980px;
     height: auto;
   }
 }
@@ -40,7 +46,8 @@ img {
     height: auto;
     float: none;
     margin: auto;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -58,7 +65,8 @@ div {
     height: auto;
     float: none;
     margin-left: auto;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -66,10 +74,20 @@ div p#title {
   font-weight: 700;
   font-size: 42px;
 }
+@media screen and (max-width: 980px) {
+  div p#title {
+    font-size: 84px;
+  }
+}
 
 div p#text {
   font-weight: 300;
   font-size: 16px;
+}
+@media screen and (max-width: 980px) {
+  div p#text {
+    font-size: 32px;
+  }
 }
 
 div button {
@@ -83,6 +101,13 @@ div button {
   font-weight: 700;
   color: white;
   line-height: 0px;
+}
+@media screen and (max-width: 980px) {
+  div button {
+    width: 256px;
+    height: 96px;
+    font-size: 32px;
+  }
 }
 
 div button:hover {
