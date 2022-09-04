@@ -56,7 +56,7 @@ img {
     }
 }
 
-div {
+section main div {
     position: relative;
     max-width: 40%;
     height: 330px;
@@ -113,6 +113,22 @@ div button {
         font-size: 32px;
     }
 }
+
+section div#over {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+section div#over div#popup {
+    
+}
+
 
 div button:hover {
     cursor: pointer;
