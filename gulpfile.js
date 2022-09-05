@@ -11,7 +11,7 @@ function style() {
 
 function watch(){
     browserSync.init({
-        server: {
+        server:{
             baseDir: './'
         }
     });

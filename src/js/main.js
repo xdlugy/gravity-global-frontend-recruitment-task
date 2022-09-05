@@ -1,10 +1,10 @@
-document.cookie="0";
 window.onload = function(){
 
     const over = document.getElementById('over');
     const button = document.getElementById('button');
     const popup = document.getElementById('popup');
     const close = document.getElementById('close');
+
     var licznik=document.cookie;
 
     button.onclick = function() {
