@@ -113,40 +113,44 @@ div button {
 section div#over {
   width: 100%;
   height: 100%;
-  display: none;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
   z-index: 1;
+  transition: all 0.5s;
 }
 
 section div#over div#popup {
   position: absolute;
-  top: 50%;
+  top: -20%;
   transform: translateY(-50%);
   left: 20%;
   width: 60%;
-  height: 200px;
+  height: 190px;
   background-color: #FFFFFF;
   z-index: 2;
+  transition: all 0.5s;
 }
 
 section div#over div#popup p {
-  padding-left: 10%;
-}
-@media screen and (max-width: 980px) {
-  section div#over div#popup p {
-    padding-left: 10%;
-  }
+  padding-left: 5%;
+  width: 60%;
 }
 
+section div#over div#popup p.title {
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 980px) {
   section div#over div#popup p.title {
     font-size: 250%;
   }
 }
 
+section div#over div#popup p.text {
+  float: left;
+}
 @media screen and (max-width: 980px) {
   section div#over div#popup p.text {
     font-size: 120%;
@@ -159,6 +163,18 @@ span {
   margin-right: 30px;
   margin-top: 20px;
   color: #121212;
+}
+
+button#reset {
+  float: right;
+  margin-right: 30px;
+}
+@media screen and (max-width: 980px) {
+  button#reset {
+    width: 128px;
+    height: 48px;
+    font-size: 16px;
+  }
 }
 
 span:hover {
