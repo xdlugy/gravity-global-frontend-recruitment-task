@@ -11,7 +11,7 @@ body {
     padding: 0;
 }
 
-section {
+main {
     position: relative;
     background-color: $background;
     max-width: 1440px;
@@ -25,7 +25,7 @@ section {
     }
 }
 
-main {
+div#content {
     position: relative;
     max-width: 980px;
     height: 330px;
@@ -56,7 +56,7 @@ img {
     }
 }
 
-section main div {
+main div#content div {
     position: relative;
     max-width: 40%;
     height: 330px;
@@ -92,7 +92,7 @@ p.text {
     }
 }
 
-div button {
+div button#button, button#reset {
     padding: 16px 40px;
 
     width: 128px;
@@ -114,7 +114,7 @@ div button {
     }
 }
 
-section div#over {
+main div#over {
     width: 100%;
     height: 100%;
     visibility: hidden;
@@ -126,7 +126,7 @@ section div#over {
     transition: all .5s;
 }
 
-section div#over div#popup {
+main div#over div#popup {
     position: absolute;
     top: -20%;
     transform: translateY(-50%);
@@ -138,31 +138,33 @@ section div#over div#popup {
     transition: all .5s;
 }
 
-section div#over div#popup p {
+main div#over div#popup p {
     padding-left: 5%;
     width: 60%;
 }
 
-section div#over div#popup p.title {
+main div#over div#popup p.title {
     margin-bottom: 20px;
     @media screen and (max-width: $maxwidth) {
         font-size: 250%;
     }
 }
 
-section div#over div#popup p.text {
+main div#over div#popup p.text {
     float: left;
     @media screen and (max-width: $maxwidth) {
         font-size: 120%;
     }
 }
 
-span {
+button#close {
     font-size: 30px;
     float: right;
     margin-right: 30px;
     margin-top: 20px;
     color: $text;
+    border: 0;
+    background-color: $background;
 }
 
 button#reset {
