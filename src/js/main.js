@@ -1,20 +1,19 @@
 window.onload = function(){
 
-    const over = document.getElementById('over');
-    const button = document.getElementById('button');
-    const popup = document.getElementById('popup');
-    const close = document.getElementById('close');
-    const bold = document.getElementsByTagName('b');
-    const reset = document.getElementById('reset');
+    const over = document.getElementsByClassName('over')[0];
+    const button = document.getElementsByClassName('button')[0];
+    const popup = document.getElementsByClassName('popup')[0];
+    const close = document.getElementsByClassName('close')[0];
+    const bold = document.getElementsByTagName('b')[0];
+    const reset = document.getElementsByClassName('reset')[0];
 
     var licznik=document.cookie;
 
     button.onclick = function() {
-        over.style.visibility="visible";
-        over.style.backgroundColor="rgba(0,0,0,0.4)";
-        popup.style.top="50%";
+        over.classList.add("over_animation");
+        popup.classList.add("popup_animation");
         licznik++;
-        bold[0].innerHTML=licznik+" times";
+        bold.innerHTML=licznik+" times";
         document.cookie=licznik;
 
         if(document.cookie>5)
@@ -26,21 +25,19 @@ window.onload = function(){
     reset.onclick = function() {
         document.cookie=0;
         licznik=0;
-        bold[0].innerHTML="0 times";
+        bold.innerHTML="0 times";
         reset.style.visibility="hidden";
     }
 
     window.onclick = function(event) {
         if (event.target == over) {
-          over.style.visibility = "hidden";
-          popup.style.top="-50%";
-          over.style.backgroundColor="rgba(0,0,0,0)";
+          popup.classList.remove("popup_animation");
+          over.classList.remove("over_animation");
         }
     }
 
-    close.onclick= function(){
-        over.style.visibility="hidden";
-        popup.style.top="-50%";
-        over.style.backgroundColor="rgba(0,0,0,0)";
+    close.onclick=function(){
+        popup.classList.remove("popup_animation");
+        over.classList.remove("over_animation");
     }
 };
