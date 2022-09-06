@@ -10,35 +10,29 @@ main {
   color: #121212;
   margin: auto;
 }
-
-div#content {
+main div#content {
   width: 980px;
   margin: auto;
   margin-top: 95px;
 }
-
-img {
+main div#content img {
   max-width: 50%;
   float: left;
 }
-
-div#right {
+main div#content div#right {
   max-width: 40%;
   float: left;
   margin-left: 10%;
 }
-
-p.title {
+main p.title {
   font-weight: 700;
   font-size: 42px;
 }
-
-p.text {
+main p.text {
   font-weight: 300;
   font-size: 16px;
 }
-
-button#button, button#reset {
+main button#button, main button#reset {
   width: 128px;
   height: 48px;
   font-size: 16px;
@@ -50,8 +44,7 @@ button#button, button#reset {
   color: white;
   text-align: center;
 }
-
-div#over {
+main div#over {
   width: 100%;
   height: 100%;
   visibility: hidden;
@@ -62,8 +55,7 @@ div#over {
   z-index: 1;
   transition: all 1s;
 }
-
-div#popup {
+main div#popup {
   position: absolute;
   top: -50%;
   transform: translateY(-50%);
@@ -75,17 +67,14 @@ div#popup {
   transition: top 1s;
   padding-bottom: 20px;
 }
-
-div#popup p {
+main div#popup p {
   padding-left: 30px;
   width: 50%;
 }
-
-div#popup p.text {
+main div#popup p.text {
   float: left;
 }
-
-button#close {
+main div#popup button#close {
   font-size: 32px;
   float: right;
   margin-right: 30px;
@@ -94,50 +83,48 @@ button#close {
   border: 0;
   background-color: #FFFFFF;
 }
-
-button#reset {
+main div#popup button#reset {
   float: right;
   margin-right: 30px;
 }
-
+main div button:hover {
+  cursor: pointer;
+}
 @media (max-width: 980px) {
-  img {
-    max-width: 100%;
-  }
-  div#content {
+  main div#content {
     width: 80%;
   }
-  div#right {
+  main div#content img {
+    max-width: 100%;
+  }
+  main div#content div#right {
     max-width: 100%;
     width: 100%;
     margin: auto;
   }
-  div#popup {
+  main div#popup {
     width: 90%;
     left: 5%;
     padding-bottom: 10px;
   }
-  div#popup p {
+  main div#popup p {
     padding-left: 5%;
   }
-  p.title {
-    font-size: 6vw;
-  }
-  p.text {
-    font-size: 4vw;
-  }
-  button#close {
+  main div#popup button#close {
     margin-right: 5%;
     margin-top: 5%;
     font-size: 6vw;
   }
-  button#button, button#reset {
+  main p.title {
+    font-size: 6vw;
+  }
+  main p.text {
+    font-size: 4vw;
+  }
+  main button#button, main button#reset {
     width: 30vw;
     height: 10vw;
     font-size: 4vw;
     margin-top: 5%;
   }
-}
-div button:hover {
-  cursor: pointer;
 }
