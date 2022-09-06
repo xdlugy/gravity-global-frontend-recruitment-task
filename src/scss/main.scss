@@ -132,7 +132,7 @@ main div#over div#popup {
     transform: translateY(-50%);
     left: 20%;
     width: 60%;
-    height: 190px;
+    height: auto;
     background-color: $background;
     z-index: 2;
     transition: all .5s;
@@ -140,7 +140,7 @@ main div#over div#popup {
 
 main div#over div#popup p {
     padding-left: 5%;
-    width: 60%;
+    width: 55%;
 }
 
 main div#over div#popup p.title {
@@ -152,8 +152,9 @@ main div#over div#popup p.title {
 
 main div#over div#popup p.text {
     float: left;
+    margin-bottom: 40px;
     @media screen and (max-width: $maxwidth) {
-        font-size: 120%;
+        font-size: 32px;
     }
 }
 
@@ -172,9 +173,10 @@ button#reset {
     margin-right: 30px;
 
     @media screen and (max-width: $maxwidth) {
-        width: 128px;
-        height: 48px;
-        font-size: 16px;
+        width: 192px;
+        height: 72px;
+        padding: 16px 20px;
+        margin-top: 40px;
     }
 }
 
