@@ -16,6 +16,7 @@ window.onload = function(){
         licznik++;
         bold[0].innerHTML=licznik+" times";
         document.cookie=licznik;
+
         if(document.cookie>5)
             reset.style.visibility="visible";
             else
@@ -32,14 +33,14 @@ window.onload = function(){
     window.onclick = function(event) {
         if (event.target == over) {
           over.style.visibility = "hidden";
-          popup.style.top="-20%";
+          popup.style.top="-50%";
           over.style.backgroundColor="rgba(0,0,0,0)";
         }
     }
 
     close.onclick= function(){
         over.style.visibility="hidden";
-        popup.style.top="-20%";
-          over.style.backgroundColor="rgba(0,0,0,0)";
+        popup.style.top="-50%";
+        over.style.backgroundColor="rgba(0,0,0,0)";
     }
 };
